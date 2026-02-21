@@ -63,10 +63,11 @@ export default function Home() {
             About Us
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            REFCEO Outreach is a monthly impact initiative focused on
+            Imo Hope for the Hopeless Outreach is a monthly impact initiative focused on
             evangelism, humanitarian service, worship, and community
-            transformation. Every second Friday, we step out to serve and
-            uplift lives.
+            transformation in rural areas of Imo State, Nigeria. We are committed to
+            sharing the love of Christ through medical outreach, food distribution,
+            and spiritual support, bringing hope to those in need.
           </p>
         </motion.div>
 
@@ -102,7 +103,7 @@ export default function Home() {
         </motion.h2>
 
         <p className="max-w-2xl mx-auto text-gray-600 mb-12">
-          See what God is doing through REFCEO.
+          See what God is doing through Imo Hope for the Hopeless.
         </p>
 
         {/* Reduced Video Size */}
