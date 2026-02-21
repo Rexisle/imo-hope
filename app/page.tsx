@@ -221,20 +221,28 @@ export default function Home() {
         href="#"
         className="hover:text-white transition duration-300 hover:scale-105"
       >
-        YouTube
+        Facebook
       </a>
       <a
         href="#"
         className="hover:text-white transition duration-300 hover:scale-105"
       >
-        Contact
+        Whatsapp
       </a>
     </div>
-
+    {/* Contact Info */}
+    <div className="text-sm text-gray-400">
+      <p className="mb-2">
+      <strong>Phone:</strong> +234 812 345 6789
+      </p>
+      <p>
+      <strong>Address:</strong> Central Community Church, Main Street, Cityville
+      </p>
+    </div>
     {/* Divider */}
     <div className="border-t border-gray-800 pt-8">
       <p className="text-xs text-gray-500">
-        © {new Date().getFullYear()} REFCEO. All rights reserved.
+        © {new Date().getFullYear()} Imo Hope for the Hopeless. All rights reserved.
       </p>
     </div>
 

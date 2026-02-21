@@ -12,7 +12,6 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Gallery", href: "#gallery" },
     { name: "Events", href: "#events" },
-    { name: "Volunteer", href: "#volunteer" },
   ];
 
   useEffect(() => {

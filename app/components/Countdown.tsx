@@ -61,40 +61,40 @@ export default function Countdown() {
   ];
 
   return (
-    <div className="text-center">
+    <div id="events" className="text-center">
       <h2 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight">
-        Next Outreach
+      Next Outreach
       </h2>
 
       <p className="text-gray-400 mb-10 text-sm md:text-base">
-        {formattedDate} • 10:00 AM
+      {formattedDate} • 10:00 AM
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-        {timeBlocks.map((block, index) => (
-          <motion.div
-            key={block.label}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-[0_15px_40px_rgba(0,0,0,0.3)]"
-          >
-            <motion.div
-              key={block.value}
-              initial={{ scale: 1.1, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className="text-3xl md:text-4xl font-bold text-white"
-            >
-              {block.value.toString().padStart(2, "0")}
-            </motion.div>
+      {timeBlocks.map((block, index) => (
+        <motion.div
+        key={block.label}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.1 }}
+        viewport={{ once: true }}
+        className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-[0_15px_40px_rgba(0,0,0,0.3)]"
+        >
+        <motion.div
+          key={block.value}
+          initial={{ scale: 1.1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          className="text-3xl md:text-4xl font-bold text-white"
+        >
+          {block.value.toString().padStart(2, "0")}
+        </motion.div>
 
-            <div className="text-xs md:text-sm text-gray-400 mt-2 uppercase tracking-wider">
-              {block.label}
-            </div>
-          </motion.div>
-        ))}
+        <div className="text-xs md:text-sm text-gray-400 mt-2 uppercase tracking-wider">
+          {block.label}
+        </div>
+        </motion.div>
+      ))}
       </div>
     </div>
   );
