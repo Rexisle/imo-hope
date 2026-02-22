@@ -9,9 +9,9 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const links = [
-    { name: "About", href: "#about" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Events", href: "#events" },
+    { name: "About", href: "/#about" },
+    { name: "Gallery", href: "/#gallery" },
+    { name: "Events", href: "/#events" },
   ];
 
   useEffect(() => {

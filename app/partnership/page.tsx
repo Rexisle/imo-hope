@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "../components/Navbar";
 import Donate from "../components/Donate";
+import Footer from "../components/Footer";
 
 import { motion } from "framer-motion";
 import {
@@ -120,7 +121,7 @@ export default function Partnership() {
       </section>
 
       {/* IMPACT SECTION */}
-      <section className="py-24 px-6 md:px-16 bg-black text-white text-center">
+      <section className="py-24 px-6 md:px-16 bg-orange-950 text-white text-center">
         <h2 className="text-3xl font-bold mb-8">Our Impact</h2>
         <p className="max-w-3xl mx-auto text-gray-300 text-lg">
           Since inception on April 19th, 2019 to November 23rd, 2025,
@@ -157,7 +158,7 @@ export default function Partnership() {
       {/* CONTACT SECTION */}
       <section
         id="contact"
-        className="py-24 bg-gradient-to-br from-gray-900 to-black text-white px-6 md:px-16"
+        className="py-24 bg-gradient-to-br from-gray-900 to-gray-700 text-white px-6 md:px-16"
       >
         <h2 className="text-3xl font-bold text-center mb-12">
           Contact & Partnership
@@ -205,53 +206,17 @@ export default function Partnership() {
             </a>
           </div>
         </div>
+        <div className="mt-12 flex justify-center">
+          <a
+            href="#donate"
+            className="px-8 py-3 bg-white text-black rounded-full font-semibold hover:scale-105 transition"
+          >
+            Donate
+          </a>
+        </div>
       </section>
-        {/* FOOTER */}
-        <footer className="bg-gray-800 text-gray-300 py-20 px-6">
-  <div className="max-w-6xl mx-auto text-center">
-
-    {/* Brand */}
-    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
-      IMO HOPE FOR THE HOPELESS
-    </h3>
-
-    <p className="text-gray-400 max-w-md mx-auto mb-10 text-sm md:text-base">
-      Impacting lives through faith,
-      compassion, and community transformation.
-    </p>
-
-    {/* Social Links */}
-    <div className="flex justify-center gap-10 text-sm font-medium mb-12">
-      <a
-        href="#"
-        className="hover:text-white transition duration-300 hover:scale-105"
-      >
-        Instagram
-      </a>
-      <a
-        href="#"
-        className="hover:text-white transition duration-300 hover:scale-105"
-      >
-        YouTube
-      </a>
-      <a
-        href="#"
-        className="hover:text-white transition duration-300 hover:scale-105"
-      >
-        Contact
-      </a>
-    </div>
-
-    {/* Divider */}
-    <div className="border-t border-gray-800 pt-8">
-      <p className="text-xs text-gray-500">
-        © {new Date().getFullYear()} REFCEO. All rights reserved.
-      </p>
-    </div>
-
-  </div>
-</footer>
-
+    
+      <Footer />
     </main>
   );
 }

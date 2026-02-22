@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Countdown from "./components/Countdown";
 import Activities from "./components/Activities";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -119,7 +120,10 @@ export default function Home() {
 
         
       </section>
-      <section className="relative py-28 px-6 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black text-white">
+      <section
+        id="events"
+        className="relative py-28 px-6 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black text-white"
+      >
 
 {/* Section Header */}
 <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 tracking-tight">
@@ -141,7 +145,7 @@ export default function Home() {
   {/* Left: Countdown */}
   <div className="flex-1 text-center md:text-left">
     <p className="text-gray-400 max-w-xl mx-auto md:mx-0 mb-10 text-sm md:text-base">
-      Every second Friday, we gather to serve, uplift, and transform lives. Join the movement.
+      Every third week of the month, we gather to serve, uplift, and transform lives. Join the movement.
     </p>
 
     {/* Glass Countdown Container */}
@@ -152,7 +156,7 @@ export default function Home() {
     {/* Location with Icon */}
     <div className="flex items-center justify-center md:justify-start gap-2 text-gray-300 mt-2 text-sm md:text-base">
       <MapPin size={20} className="text-purple-400" />
-      <span>Central Community Church, Main Street, Cityville</span>
+      <span>Isiala Secretariat Town hall, Akpotu</span>
     </div>
   </div>
 
@@ -173,7 +177,7 @@ export default function Home() {
 </section>
 
       {/* DONATION CTA */}
-      <section className="bg-black text-white py-24 text-center px-6">
+      <section className="bg-gray-800 text-white py-24 text-center px-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -194,60 +198,8 @@ export default function Home() {
             </a>
         </motion.div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="bg-gray-800 text-gray-300 py-20 px-6">
-  <div className="max-w-6xl mx-auto text-center">
-
-    {/* Brand */}
-    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
-      IMO HOPE FOR THE HOPELESS
-    </h3>
-
-    <p className="text-gray-400 max-w-md mx-auto mb-10 text-sm md:text-base">
-      Impacting lives through faith,
-      compassion, and community transformation.
-    </p>
-
-    {/* Social Links */}
-    <div className="flex justify-center gap-10 text-sm font-medium mb-12">
-      <a
-        href="#"
-        className="hover:text-white transition duration-300 hover:scale-105"
-      >
-        Instagram
-      </a>
-      <a
-        href="#"
-        className="hover:text-white transition duration-300 hover:scale-105"
-      >
-        Facebook
-      </a>
-      <a
-        href="#"
-        className="hover:text-white transition duration-300 hover:scale-105"
-      >
-        Whatsapp
-      </a>
-    </div>
-    {/* Contact Info */}
-    <div className="text-sm text-gray-400">
-      <p className="mb-2">
-      <strong>Phone:</strong> +234 812 345 6789
-      </p>
-      <p>
-      <strong>Address:</strong> Central Community Church, Main Street, Cityville
-      </p>
-    </div>
-    {/* Divider */}
-    <div className="border-t border-gray-800 pt-8">
-      <p className="text-xs text-gray-500">
-        © {new Date().getFullYear()} Imo Hope for the Hopeless. All rights reserved.
-      </p>
-    </div>
-
-  </div>
-</footer>
+<Footer />
+     
     </main>
   );
 }
