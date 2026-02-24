@@ -111,7 +111,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto aspect-video rounded-3xl overflow-hidden shadow-2xl mb-16">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/F8PsyRIU9aI"
+            src="https://www.youtube.com/embed/AnuR_vHFmEE"
             title="REFCEO Outreach Recap"
             frameBorder="0"
             allowFullScreen
