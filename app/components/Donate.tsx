@@ -51,11 +51,11 @@ export default function Donate() {
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-gray-400">Account Name</p>
-                <p className="font-medium">MO-HOPE FOR THE HOPELESS</p>
+                <p className="font-medium">IMO-HOPE FOR THE HOPELESS</p>
               </div>
               <button
                 onClick={() =>
-                  copyToClipboard("MO-HOPE FOR THE HOPELESS", "name")
+                  copyToClipboard("IMO-HOPE FOR THE HOPELESS", "name")
                 }
                 className="flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300"
               >
@@ -67,7 +67,7 @@ export default function Donate() {
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-sm text-gray-400">Account Number</p>
-                <p className="font-medium">0123456789</p>
+                <p className="font-medium">1228788000</p>
               </div>
               <button
                 onClick={() =>
@@ -82,7 +82,7 @@ export default function Donate() {
 
             <div>
               <p className="text-sm text-gray-400">Bank Name</p>
-              <p className="font-medium">First Bank of Nigeria</p>
+              <p className="font-medium">Zenith Bank</p>
             </div>
 
           </div>
