@@ -164,7 +164,7 @@ export default function Home() {
   {/* Left: Countdown */}
   <div className="flex-1 text-center md:text-left">
     <p className="text-gray-400 max-w-xl mx-auto md:mx-0 mb-10 text-sm md:text-base">
-      Every third week of the month, we gather to serve, uplift, and transform lives. Join the movement.
+      On the set out day of outreach, we gather to serve, uplift, and transform lives. Join the movement.
     </p>
 
     {/* Glass Countdown Container */}
