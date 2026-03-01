@@ -51,41 +51,60 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <section
-        id="about"
-        className="py-24 px-6 md:px-16 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center"
-      >
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About Us
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Imo Hope for the Hopeless Outreach is a monthly impact initiative focused on
-            evangelism, humanitarian service, worship, and community
-            transformation in rural areas of Imo State, Nigeria. We are committed to
-            sharing the love of Christ through medical outreach, food distribution,
-            and spiritual support, bringing hope to those in need.
-          </p>
-        </motion.div>
+  id="about"
+  className="py-24 px-6 md:px-16 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center"
+>
+  <motion.div
+    initial={{ opacity: 0, x: -60 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+  >
+    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+      Who We Are
+    </h2>
+    <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+      <p>
+        <strong>IMO-Hope for the Hopeless</strong> is an Evangelical medical outreach (CAC Reg: 6985108) with Head office in Portharcourt. Dedicated to serving 
+        the rural heartlands of Nigeria. Driven by the Great Commission of 
+        Matthew 28:19-20 and the compassion of Luke 4:18, we act as a 
+        bridge of hope for the indigent, orphans, and widows.
+      </p>
+      
+      <p>
+        Our mission moves on the "vehicle of love," providing free healthcare 
+        and essential aid to communities often overlooked. We believe that 
+        healing the body is a powerful gateway to sharing the message of 
+        Christ’s love.
+      </p>
 
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="rounded-3xl overflow-hidden shadow-2xl"
-        >
-          <img
-            src="/h.png"
-            alt="Outreach impact"
-            className="w-full h-[400px] object-cover hover:scale-105 transition duration-700"
-          />
-        </motion.div>
-      </section>
+      <div className="bg-blue-50 p-4 border-l-4 border-blue-600 italic text-sm">
+        <p className="font-semibold text-blue-900 mb-1">Our Policy of Stewardship:</p>
+        We maintain strict budgetary reviews to ensure that every resource 
+        reaches those in need, keeping our administrative costs at an 
+        absolute minimum for maximum local impact.
+      </div>
+    </div>
+  </motion.div>
+
+  <motion.div
+    initial={{ opacity: 0, x: 60 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    className="rounded-3xl overflow-hidden shadow-2xl relative"
+  >
+    <img
+      src="/h.png" 
+      alt="Medical outreach impact in Nigeria"
+      className="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+    />
+    {/* Optional overlay tag for extra modern feel */}
+    <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+      <p className="text-blue-700 font-bold text-sm">CAC Reg: 6985108</p>
+    </div>
+  </motion.div>
+</section>
       <Activities />
 
       {/* GALLERY */}
